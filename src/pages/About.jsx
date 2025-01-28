@@ -4,7 +4,7 @@ import founder from "../images/founder.png";
 const About = () => {
   return (
     <div className='min-h-screen p-7 '>
-        <div className='grid grid-cols-2 rounded-2xl bg-yellow-400 p-5 shadow-xl w-full justify-center'>
+        <div className='grid grid-cols-2 rounded-2xl bg-white p-5 hover:shadow-xl w-full justify-center'>
             <div className='grid grid-rows-3 items-center'>
                 <div className='font-bold text-6xl text-center'></div>
                 <div><img src={founder} alt="Spend-Wise" className="h-[300px] w-[300px] rounded-full shadow-2xl m-auto -mt-25" /></div>
