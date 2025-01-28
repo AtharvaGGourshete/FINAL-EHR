@@ -5,9 +5,11 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Landingpage from "./pages/landingpage";
 import About from "./pages/About";
-import LastMonthExpenses from "./pages/LastMonthExpenses";
-import TrackExpenses from "./pages/TrackExpenses";
+import LastMonthExpenses from "./pages/Fetch";
+import Submit from "./pages/Submit";
+import Fetch from "./pages/Fetch";
 import Login from "./pages/Login";
+import Patientdata from "./pages/Patientdata";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,31 +34,42 @@ function App() {
       )
     },
     {
-      path: "/lme",
+      path: "/fetch",
       element: (
         <>
           <Nav />
-          <LastMonthExpenses />
+          <Fetch />
           <Footer />
         </>
       )
     },
-    {
-      path: "/trackexpenses",
-      element: (
-        <>
-          <Nav />
-          <TrackExpenses />
-          <Footer />
-        </>
-      )
-    },
+    
     {
       path: "/login",
       element: (
         <>
           <Nav />
           <Login />
+          <Footer />
+        </>
+      )
+    },
+    {
+      path: "/patientdata",
+      element: (
+        <>
+          <Nav />
+          <Patientdata />
+          <Footer />
+        </>
+      )
+    },
+    {
+      path: "/submit",
+      element: (
+        <>
+          <Nav />
+          <Submit />
           <Footer />
         </>
       )

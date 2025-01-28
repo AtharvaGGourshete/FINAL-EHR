@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import dollar from "../images/dollar.png";
+import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import Landingpage from "../pages/landingpage";
 import { ClerkProvider } from "@clerk/clerk-react";
@@ -40,8 +40,8 @@ const Nav = () => {
       <nav className="bg-black text-white p-5 flex justify-around items-center">
         {/* Logo and Brand Name */}
         <div className="flex items-center gap-3">
-          <img src={dollar} alt="Spend-Wise" className="h-[40px] w-[40px]" />
-          <span className="font-bold text-xl sm:text-2xl">Spend Wise</span>
+          <img src={logo} alt="Spend-Wise" className="h-[40px] w-[40px]" />
+          <span className="font-bold text-xl sm:text-2xl">MediLock</span>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -90,9 +90,9 @@ const Nav = () => {
               About Us
             </li>
           </Link>
-          <Link to={"/lme"}>
+          <Link to={"/fetch"}>
             <li className="hover:underline cursor-pointer mt-2 sm:mt-0">
-              Last Month Expenses
+              Fetch My Data
             </li>
           </Link>
           <div className="flex space-x-8 items-center">

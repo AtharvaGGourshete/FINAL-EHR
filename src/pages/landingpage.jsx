@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cost from "../images/cost.gif";
+import patient from "../images/patient.png";
 import { Link } from "react-router-dom";
 
 function Landingpage() {
@@ -31,27 +31,27 @@ function Landingpage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center p-6 md:p-12 lg:p-20">
         <div className="flex justify-center">
           <img
-            src={cost}
+            src={patient}
             alt="Spend-Wise"
-            className="h-auto max-w-full w-[300px] md:w-[400px]"
+            className="h-auto max-w-full w-[500px] md:w-[500px]"
           />
         </div>
         <div className="text-center md:text-left">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
-            Start tracking your money your way.
+          Your Health, Your Data, Fully Protected.
           </h1>
-          <Link to={"/trackexpenses"}>
+          <Link to={"/patientdata"}>
           <button
             type="button"
-            className="text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-xl px-6 py-3 inline-flex items-center"
+            className="text-gray-900 bg-[#388ef7] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-xl px-6 py-3 inline-flex items-center"
           >
-            Start Tracking
+            Enter patient data 
           </button>
           </Link>
         </div>
       </div>
 
-      {/* Accordion Section */}
+      {/* Accordion Section
       <section className="bg-gray-100 py-10 px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           FAQs
@@ -107,7 +107,7 @@ function Landingpage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
